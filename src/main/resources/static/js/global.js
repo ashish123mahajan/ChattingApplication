@@ -1,4 +1,4 @@
-//Global var
+//Global variables
 var baseurl="http://localhost:9091";
 
 $(".messages").animate({ scrollTop: $(document).height() }, "fast");
