@@ -24,6 +24,8 @@ public class User {
 	
 	private String lname;
 	
+	private int status;
+	
 	private int is_active;
 
 	
@@ -85,6 +87,14 @@ public class User {
 
 	public void setIs_active(int is_active) {
 		this.is_active = is_active;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
 	}
 
 	@Override

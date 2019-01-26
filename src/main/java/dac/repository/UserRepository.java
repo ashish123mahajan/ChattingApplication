@@ -8,4 +8,5 @@ import dac.pojo.User;
 @Repository
 public interface UserRepository extends CrudRepository<User, Long>{
 
+	User findByEmailAndPassword(String email,String password);
 }
