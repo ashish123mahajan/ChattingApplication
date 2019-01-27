@@ -1,4 +1,4 @@
-package dac.services;
+/*package dac.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -19,6 +19,7 @@ import dac.pojo.FileStorageProperties;
 
 @Service
 public class FileStorageService {
+
 	private final Path fileStorageLocation;
 
 	@Autowired
@@ -67,3 +68,4 @@ public class FileStorageService {
 		}
 	}
 }
+*/

@@ -1,9 +1,14 @@
-package dac.pojo;
+/*package dac.pojo;
+
+import javax.persistence.Entity;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
+@Entity
 @ConfigurationProperties(prefix = "file")
 public class FileStorageProperties {
+	
+	
 	private String uploadDir;
 
 	public String getUploadDir() {
@@ -13,4 +18,4 @@ public class FileStorageProperties {
 	public void setUploadDir(String uploadDir) {
 		this.uploadDir = uploadDir;
 	}
-}
+}*/

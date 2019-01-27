@@ -11,5 +11,5 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
-  file
+  file:
     upload-dir: ./src/main/resources/static/upload    
