@@ -23,6 +23,12 @@ $(document).ready(function(){
 			});
 	    
 	  });
+
+	$("#sendTologIn").click(function(){
+
+		window.location=baseurl+"/login.html";
+	});
+	
 	
 	//console.log(getCookieValue("globalUserId"));
 	});

@@ -22,6 +22,13 @@ $(document).ready(function(){
 			});
 	    
 	  });
+
+	$("#sendTosignup").click(function(){
+
+		window.location=baseurl+"/signup.html";
+	});
+	
 	
 	console.log(getCookieValue("globalUserId"));
-	});
+});
+
