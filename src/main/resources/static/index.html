@@ -237,5 +237,11 @@
 	</div>
 	<script src="js/global.js">
 </script>
+<script >
+globalUserId=getCookieValue("globalUserId");
+if($.isEmptyObject(globalUserId)){
+	window.location=baseurl+"/login.html";
+}
+</script>
 </body>
 </html>

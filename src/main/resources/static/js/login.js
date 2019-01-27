@@ -8,14 +8,20 @@ $(document).ready(function(){
 			  url: baseurl+"/login",
 			  contentType:"application/json; charset=utf-8",
 			  data: JSON.stringify(user),
-			  success: function(msg){
-			        alert( "Data Saved: " + msg );
+			  dataType : 'json',
+			  success: function(result){
+				 
+				  document.cookie = "globalUserId=" + result.id;
+				
 			        window.location=baseurl+"/index.html";
 			  },
 			  error: function(XMLHttpRequest, textStatus, errorThrown) {
-			     alert("some error");
+			     alert("Invalid email or password");
+				  window.location=baseurl+"login.html";
 			  }
 			});
 	    
 	  });
+	
+	console.log(getCookieValue("globalUserId"));
 	});

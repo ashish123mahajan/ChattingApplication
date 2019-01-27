@@ -23,18 +23,18 @@ public class SimpleController {
 	LoginService loginService;
 	
 	//url- http://localhost:9091/hello
-	@RequestMapping("/hello")
-	public String hello() {
-		System.out.println("hello controller is working");
-		User user=new User();
-		user.setFname("Ashish");
-		user.setLname("Mahajan");
-		user.setIs_active(1);
-		user.setPassword("ashish");
-		user.setPhone("7588647455");
-		user.setEmail("ash.n.mahajan@gmail.com");
-		userRepository.save(user);
-		return "hello spring-boot";
+	@RequestMapping(value = "/signup", method = RequestMethod.POST, produces = "application/json",consumes="application/json")
+	public @ResponseBody User signup(@RequestBody User user) {
+		User signUpuser=new User();
+		signUpuser.setFname(user.getFname());
+		signUpuser.setLname(user.getLname());
+		signUpuser.setIs_active(1);
+		signUpuser.setPassword(user.getPassword());
+		signUpuser.setPhone(user.getPhone());
+		signUpuser.setEmail(user.getEmail());
+		signUpuser.setStatus(0);
+		signUpuser.setIs_active(1);
+		return userRepository.save(signUpuser);
 	} 
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST, produces = "application/json",consumes="application/json")
